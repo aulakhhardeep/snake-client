@@ -7,16 +7,20 @@ const connect = function() {
 
   conn.on("data", (data) => {
     console.log("Server says: ", data);
-  })
+  });
 
   conn.on("connect", () => {
+    console.log("connected");
     conn.write("Name: HKA");
-  })
+    //conn.write("Move: up");
+    
+  });
 
   //interpret incoming data as text
   conn.setEncoding("utf8");
-
+  console.log("Connecting ...");
   return conn;
 };
+
 
 module.exports = connect;

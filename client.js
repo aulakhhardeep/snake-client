@@ -1,8 +1,10 @@
 const net = require("net");
+const {IP, PORT} = require('./constants');
 const connect = function() {
+  //establishing the connection with the server
   const conn = net.createConnection({ //conn is an object, it represents the connection with the server, it will also handle messages from the server.
-    host: '192.168.1.72',
-    port: 50541
+    host: IP,
+    port: PORT,
   });
 
   conn.on("data", (data) => {

@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![Starting Page of Game](/snake-client/img.png?raw=true "Starting Page of Game")
-!["Message from Player"](/snake-client/images/img1.png "Displaying message")
+![Starting Page of Game](images/img.png)
+!["Message from Player"](images/img1.png)
 
 
 ## Getting Started

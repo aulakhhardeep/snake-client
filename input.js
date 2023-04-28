@@ -14,17 +14,29 @@ const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
   }
-  if (key === 'w') {
+  if (key === 'w' || key === 'W') {
     connection.write("Move: up"); //when passing w, connection variable is sending message to server to move the object upwards
   }
-  if (key === 'a') {
+  if (key === 'a' || key === 'A') {
     connection.write("Move: left");
   }
-  if (key === 's') {
+  if (key === 's' || key === 'S') {
     connection.write("Move: down");
   }
-  if (key === 'd') {
+  if (key === 'd' || key === 'D') {
     connection.write("Move: right");
+  }
+  if (key === 'h' || key === 'H') {
+    connection.write("Say: Going Home?");//displays message when pressing h
+  }
+  if (key === 'k' || key === 'K') {
+    connection.write("Say: Slow Down");
+  }
+  if (key === 'p' || key === 'P') {
+    connection.write("Say: Are you lost");
+  }
+  if (key === 'i' || key === 'I') {
+    connection.write("Say: Need help");
   }
 };
 

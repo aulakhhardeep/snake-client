@@ -18,7 +18,7 @@ const connect = function() {
 
   //interpret incoming data as text
   conn.setEncoding("utf8");
-  console.log("Connecting ...");
+  
   return conn; //returning the conn from the connect function that allowed us to interact with the server
 };
 

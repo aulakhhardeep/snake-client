@@ -2,6 +2,6 @@ const connect = require('./client');
 const setupInput = require('./input');
 
 console.log("Connecting ...");
-connect();
+const returnConnValue = connect(); //storing object conn in a variable, conn is interacting with server
 
-setupInput();
+setupInput(returnConnValue); //passing object conn in order to send commands/messages to the server.
